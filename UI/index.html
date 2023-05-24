@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>图像修改软件V1.0</title>
+    <!-- import element plus css v2.2.17  -->
+    <link href="../static/css/index.css" rel="stylesheet"/>
+</head>
+<body>
+<div style="height: 100% " id="app">
+    <div style="padding-top: 50px; height: 25px;width:700px;margin:auto;">
+        <div style="padding: 30px; text-align: center">
+            <el-tag class="mx-1"
+                    effect="dark"
+                    round>先勾选设置，再打开文件夹修改</el-tag>
+        </div>
+<!--        修改图片质量-->
+        <div>
+            <div style="display: inline;padding-right: 50px;">
+                <el-checkbox v-model="isModifyQuality" label="修改图片质量" size="large" />
+            </div>
+            <span style="padding-left: 20px">质量（0-100）：</span>
+            <el-input-number v-model="quality" style="margin: 10px;width: 150px" :precision="0" :step="1" :max="100" />
+        </div>
+        <div>
+            <div  style="display: inline;padding-right: 50px;">
+                <el-checkbox v-model="isModifyWH" label="修改分辨率" size="large" />
+            </div>
+            <span style="padding-left: 20px">设置分辨率(默认是413x579)：</span>
+            <el-input size="mini" style="margin: 10px;width: 90px" type="number" v-model.number="imgWidth"></el-input>
+                X
+            <el-input size="mini" style="margin: 10px;width: 90px" type="number" v-model.number="imgHeight"></el-input>
+        </div>
+        <div>
+            <div  style="display: inline;padding-right: 50px;">
+                <el-checkbox v-model="isModifyDpi" label="修改dpi" size="large" />
+            </div>
+            <span style="padding-left: 20px;margin: auto">设置dpi(默认是300)：</span>
+            <el-input size="mini" style="margin: 10px;width: 100px" type="number" v-model.number="inputDpi.density"></el-input>
+            <span  style="margin: auto">px</span>
+        </div>
+        <el-button  style="padding-right: 50px;" @click="modifyDpi" type="primary">选择文件夹批量修改</el-button>
+        <span style="padding-left: 20px">文件夹路径为：</span>
+        <el-input disabled="true" size="mini" style="margin: 10px;width: 300px" v-model="folderPath"></el-input>
+        <div>
+<!--            el-divider必须用div包裹，否则会与其他元素重合-->
+            <el-divider>
+                <el-icon><star-filled /></el-icon>
+            </el-divider>
+        </div>
+
+        <br/>
+        <div style="padding: 30px">
+            <div style="padding: 10px">
+                支持作者
+            </div>
+            <el-popover
+                    placement="right"
+                    title="感谢支持"
+                    :width="400"
+                    trigger="hover"
+                    content="微信收款码"
+            >
+                <el-card >
+                    <el-image src="../static/img/weiChat.jpg" fit="contain">
+                    </el-image>
+                </el-card>
+                <template #reference>
+                    <el-button>收款码</el-button>
+                </template>
+            </el-popover>
+        </div>
+
+    </div>
+
+
+</div>
+<!-- import vue v3.2.40  -->
+<script src="../static/js/vue.global.prod.js"></script>
+<!-- import element plus component v2.2.17  -->
+<script src="../static/js/index.full.min.js"></script>
+<!-- import element plus icons v2.0.9  -->
+<script src="../static/js/index.iife.min.js"></script>
+<!-- import ECharts 5.3.3 -->
+<!--<script src="../static/js/echarts.min.js"></script>-->
+<script src="./index.js/"></script>
+</body>
+</html>

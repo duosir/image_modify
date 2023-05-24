@@ -1,0 +1,36 @@
+{
+  "name": "imgmodify",
+  "version": "1.0.0",
+  "description": "Modify the picture information",
+  "main": "main.js",
+  "author": {
+    "name": "luoyucun",
+    "email": "2936929192@qq.com",
+    "blog": "https://blog.csdn.net/m0_52108067",
+    "github": "https://github.com/duosir"
+  },
+  "contributors": [
+    {
+      "name": "luoyucun",
+      "email": "2936929192@qq.com",
+      "blog": "https://blog.csdn.net/m0_52108067",
+      "github": "https://github.com/duosir"
+    }
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "19.0.12"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.8",
+    "bytenode": "^1.4.1",
+    "electron-squirrel-startup": "^1.0.0",
+    "sharp": "^0.32.1"
+  },
+  "build": {
+    "electronVersion": "19.0.12"
+  }
+}

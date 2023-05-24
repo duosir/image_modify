@@ -1,0 +1,52 @@
+Arguments: 
+  D:\Program Files\nodejs\node.exe D:\Program Files\nvm\nvm\npm\node_global\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Program Files\Microsoft MPI\Bin\;D:\Program Files\Java\jdk\corretto-1.8.0_332\bin;D:\Downloads_from_edge\myAnaconda3;D:\Downloads_from_edge\myAnaconda3\Library\mingw-w64\bin;D:\Downloads_from_edge\myAnaconda3\Library\usr\bin;D:\Downloads_from_edge\myAnaconda3\Library\bin;D:\Downloads_from_edge\myAnaconda3\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\Downloads_from_edge\my_python_interpreter(3.8.8)\Lib\site-packages;D:\Downloads_from_edge\my_python_interpreter(3.8.8)\Scripts;C:\Users\Leovn\AppData\Roaming\pip\pip.ini;C:\Program Files\Azure Data Studio\bin;D:\maven\apache-maven-3.8.6\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\NetSarang\Xshell7\;D:\Program Files\NetSarang\Xftp7\;D:\Program Files\nvm\nvm;D:\Program Files\nodejs;D:\Program Files\nvm\nvm\npm;D:\Program Files\nvm\nvm\npm\node_global\node_modules\yarn\bin;D:\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\Microsoft SQL Serve(x86)\150\Setup Bootstrap\Log\20220216_201001\ConfigurationFile.ini\150\Tools\Binn\;D:\Microsoft SQL Server\150\Tools\Binn\;D:\Microsoft SQL Server\150\DTS\Binn\;D:\Microsoft SQL Serve(x86)\150\Setup Bootstrap\Log\20220216_201001\ConfigurationFile.ini\150\DTS\Binn\;C:\Program Files\Azure Data Studio\binC:\Users\Leovn\AppData\Roaming\\Aria2\maria2c.exe;D:\Program Files\nvm\nvm\npm\node_global;D:\myQQ\Downloads_from_myQQ\Dev-Cpp\myCproject;D:\database\mysql-8.0.29-winx64\mysql-8.0.29-winx64\bin;D:\Javaproject(idea)\image_modify\node_modules\.bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ETIMEDOUT 2409:8c5c:100:18:3::3fc:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1300:16)
+
+npm manifest: 
+  {
+    "name": "imgmodify",
+    "version": "1.0.0",
+    "description": "Modify the picture information",
+    "main": "main.js",
+    "author": "Lyc",
+    "license": "MIT",
+    "scripts": {
+      "start": "electron-forge start",
+      "package": "electron-forge package",
+      "make": "electron-forge make"
+    },
+    "devDependencies": {
+      "@electron-forge/cli": "^6.1.1",
+      "electron": "19.0.12"
+    },
+    "dependencies": {
+      "@electron/remote": "^2.0.8",
+      "bytenode": "^1.4.1",
+      "electron-squirrel-startup": "^1.0.0",
+      "sharp": "^0.32.1"
+    },
+    "build": {
+      "electronVersion": "19.0.12"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
